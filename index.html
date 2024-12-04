@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Venda seu carro</title>
+</head>
+<body>
+    <section class="conteiner-titulo">
+        <h3>Cadastre seu veículo para vender mais rápido!</h3>
+    </section>
+    
+    <section class="area-formulario">
+        <div class="area-top">
+            <h3>FORMULÁRIO</h3>
+        </div>
+
+        <div class="area-pricipal">
+            <h3>Venda fácil seu carro!</h3>
+            <p>Descreva as características que ele possuí</p>
+
+            <form action="backend.php" method="post">
+                <div class="area-1">
+                    <p>Título do anúncio <font color="red">*</font></p>
+                    <input type="text" name="titulo" placeholder="Um título para anunciar seu carro">
+                </div>
+
+                <div class="area-2">
+                    <p>Preço<font color="red">*</font></p>
+                    <input type="number" name="valor" placeholder="Defina o preço">
+                </div>
+
+                <div class="area-3">
+                    <p>Descrição<font color="red">*</font></p>
+                    <textarea type="text" name="descricao" placeholder="Detalhes pertinentes sobre o veículo, ex: arranhão na lataria"></textarea>
+                </div>
+
+                <div class="area-4">
+                    <p>Marca<font color="red">*</font></p>
+                    <input type="text" name="marca" placeholder="Digite a marca do veículo">
+                </div>
+
+                <div class="area-5">
+                    <p>Modelo<font color="red">*</font></p>
+                    <input type="text" name="modelo" placeholder="Digite o modelo do veículo">
+                </div>
+
+                <div class="area-6">
+                    <p>Kilometragem<font color="red">*</font></p>
+                    <input type="number" name="kilometragem" placeholder="Digite a kilometragem do veículo">
+                </div>
+
+                <div class="area-7">
+                    <p>Data de compra<font color="red">*</font></p>
+                    <input type="date" name="data-compra" placeholder="Digite a kilometragem do veículo">
+                </div>
+
+                <div class="area-8">
+                    <p>Tipo de câmbio<font color="red">*</font></p>
+                    <div class="radio-1">
+                        <input type="radio" name="type-cambio" title="manual">
+                        <label for="type-cambio">Manual</label>
+                    </div>
+                    <div class="radio-2">
+                        <input type="radio" name="type-cambio" title="automático">
+                        <label for="type-cambio">Automático</label>
+                    </div>
+                </div>
+
+                <div class="area-9">
+                    <p>Opcionais<font color="red">*</font></p>
+                    <div class="area-checbokx">
+                        <div class="checkbox-area">
+                            <input type="checkbox" name="options-extra">
+                            <label for="options-extra">Aiberg</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" name="options-extra">
+                            <label for="options-extra">Alarme</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" name="options-extra" title="ar condicionado">
+                            <label for="options-extra">Ar condicionado</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" name="options-extra">
+                            <label for="options-extra">Câmera de Ré</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" name="options-extra">
+                            <label for="options-extra">Assistente de Pista</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" name="options-extra">
+                            <label for="options-extra">Partida Keyless</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" name="options-extra">
+                            <label for="options-extra">Integração com celular</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" name="options-extra">
+                            <label for="options-extra">Banco de Couro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-10">
+                    <p>Fotos do carro<font color="red">*</font></p>
+                    <button type="menu">Escolher arquivos</button>
+                    <label>Nenhum arquivo escolhido</label>
+                </div>
+            
+                <div class="area-button">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
